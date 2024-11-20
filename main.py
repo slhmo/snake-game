@@ -16,14 +16,18 @@ def get_dimensions(num_rows = 4, num_columns = 4):
 
 
 def make_game_plain(rows, columns):
-    for i in range(rows):
+    for i1 in range(rows):
         game_plain.append([])
-        for j in range(columns):
-            game_plain[i].append('.')
-    i, j = random.randrange(0, rows), random.randrange(0, columns)
-    game_plain[i][j] = 'x'
+        for j1 in range(columns):
+            game_plain[i1].append('.')
+    i1, j1 = random.randrange(0, rows), random.randrange(0, columns)
+    game_plain[i1][j1] = 'x'
 
 
 dimensions = get_dimensions()
 make_game_plain(rows = dimensions[0], columns = dimensions[1])
-print(game_plain)
+
+for i2 in game_plain:
+    print(i2)
+
+
